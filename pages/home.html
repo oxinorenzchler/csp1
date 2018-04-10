@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1.0, shrink-to-fit=no, user-scalable=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Cove Manor | Resort & Spa</title>
+
+  <title>Vertical Responsive Menu - Demonstration</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto|Satisfy" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href='../assets/fontawesome/css/font-awesome.min.css' rel='stylesheet'>
+  <!-- Bootstrap -->
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="../assets/css/mdb.min.css" rel="stylesheet">
+
+
+  <!-- Custom Stylesheet -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- Navbar Container -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 p-0">
+          <!--Navbar-->
+          <nav class="navbar navbar-expand-lg navbar-dark red fixed-top">
+
+            <!-- Navbar brand -->
+            <a class="navbar-brand" href="#">Index</a>
+
+            <!-- Collapse button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Collapsible content -->
+          <div class="collapse navbar-collapse" id="basicExampleNav">
+
+            <!-- Links -->
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
+                <span class="sr-only"></span>
+                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Featured</a>
+                  <a class="dropdown-item" href="#section-content">Services</a>
+                  <a class="dropdown-item" href="#">Contact Us</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Maps</a>
+              </li>
+              <!-- Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Careers</a>
+                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+            </ul>
+            <!-- Links -->
+            <!-- Search -->
+            <form class="form-inline">
+              <div class="md-form mt-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+              </div>
+            </form>
+            <!-- User Action -->
+            <div class="">
+             <button type="button" class="btn btn-md btn-rounded gradient-2 animated fadeIn" data-toggle="modal" data-target="#modalContactForm">
+               Book Now
+             </button>
+           </div>
+         </div><!-- Collapsible content -->
+       </nav><!--/.Navbar-->
+       <!--Modal Container  -->
+       <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <!--Modal: Contact form-->
+        <div class="modal-dialog cascading-modal" role="document">
+
+          <!--Content-->
+          <div class="modal-content animated fadeIn" id="modal-content">
+
+            <!--Header-->
+            <div class="modal-header gradient-3 white-text">
+              <h4 class="title">
+                <i class="fa fa-sign-in"></i> Please login</h4>
+                <button type="button" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <!--Body-->
+              <div class="modal-body">
+
+                <!-- Material input name -->
+                <div class="md-form form-sm">
+                  <i class="fa fa-user prefix"></i>
+                  <input type="text" id="materialFormNameModalEx1" class="form-control form-control-sm">
+                  <label for="materialFormNameModalEx1">Username/Email</label>
+                </div>
+                <!-- Password -->
+                <div class="md-form form-sm">
+                  <i class="fa fa-lock prefix"></i>
+                  <input type="password" id="materialFormEmailModalEx1" class="form-control form-control-sm">
+                  <label for="materialFormEmailModalEx1">Password</label>
+                </div>
+
+                <div class="text-center mb-3">
+                  <button id="sign-in-button" type="button" class="btn gradient-3 btn-block btn-rounded z-depth-1a">Sign in</button>
+                </div>
+                <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> or Sign in with:</p>
+
+                <div class="row my-3 d-flex justify-content-center">
+                  <!--Facebook-->
+                  <button type="button" class="btn btn-success btn-rounded mr-md-3 z-depth-1a btn-sm"><i class="fa fa-facebook text-center signin-with"></i></button>
+                  <!--Twitter-->
+                  <button type="button" class="btn btn-success btn-rounded mr-md-3 z-depth-1a btn-sm"><i class="fa fa-twitter blue-text signin-with"></i></button>
+                  <!--Google +-->
+                  <button type="button" class="btn btn-success btn-rounded z-depth-1a btn-sm"><i class="fa fa-google-plus blue-text signin-with"></i></button>
+                </div>
+
+                <!--Footer-->
+                <div class="modal-footer mx-1 pt-3 mb-1">
+                  <p class="font-small grey-text d-flex justify-content-end">Not a member? <a href="#" class="blue-text ml-1">Sign Up</a></p>
+                </div>         
+              </div> <!--/.Content-->
+            </div>
+          </div><!--/Modal: Contact form-->
+        </div> <!-- endModalContainer -->
+      </div><!-- navColumn -->
+    </div><!-- navRow -->
+  </div><!-- endNavbar Container -->
+
+  <!-- Main Content -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-9 col-sm-12 bg-success vh-100">
+          <!-- content -->
+          <div class="container-fluid" style="margin-top: 100px;">
+              <h1 class="yellow">Hello World</h1>
+              <div class="red" style="height: 500px; width: 100%;">
+                
+              </div>
+             
+           <p class="brown mt-1">lorem ipsum</p>
+          </div><!-- /.content -->
+      </div>
+      <div class="col-md-3 col-sm-12 bg-primary vh-100">
+          <!-- side content -->
+          <div class="container-fluid" style="margin-top: 100px;">
+            <h1 class="cyan">World</h1>
+            <div class="green" style="width: 100%; height: 200px;">
+              
+            </div>
+            <p class="white mt-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+          </div>
+      </div>
+    </div>
+
+    <!-- <div class="row">
+      <div class="col-md-4">
+        
+      </div>
+    </div> -->
+      
+  </div>
+
+
+
+
+
+</div><!-- Main Content -->
+
+
+
+<!-- JQuery -->
+<script type="text/javascript" src="../assets/js/jquery-3.2.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="../assets/js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="../assets/js/mdb.min.js"></script>
+<!-- SideNav -->
+</body>
+</html>
