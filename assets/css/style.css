@@ -1,18 +1,14 @@
-header {
-  position: relative;
-  /*top: 0;
-  left: 0;*/
-  z-index: 1;
-  width: 100%;
-
-  box-shadow: rgba(0, 0, 0, 0.5) 0 -20px 20px 20px;
-}
 /***************************************************/
 /*CSS RESET*/
 *{
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+}
+body{
+  background-image: url('../img/body-background.jpeg');
+  background-attachment: fixed;
+
 }
 /*User Defined*/
 :root{
@@ -31,11 +27,15 @@ header {
 .shadow-2{
     text-shadow: 2px 2px 10px #000;
 }
+
 .h-1{
   font-size: 2em;
 }
 .h-2{
   font-size: 2.5em;
+}
+.h-500{
+  height: 500px;
 }
   .btn-rounded{
     border-radius: 30px;
@@ -54,12 +54,18 @@ header {
               background-image: linear-gradient(-225deg, #FF69CD 0%, #F95A6D 100%);
 
   }
+  .gradient-5{
+              background-image: linear-gradient(-225deg, #1FA2FF 30%, #A6FFCB 100%);
+
+  }
   .fa-rounded{
     border-radius: 50%;
     height: 50px;
     width: 50px;
   }
-
+  .border-radius-1{
+    border-radius: 50px;
+  }
 /*Landing Page
 ==============*/
 .vh-100{
@@ -79,8 +85,16 @@ header {
 
 
 
-
-
+.parallelogram {
+  width: 100%;
+  -webkit-transform: skew(-20deg);
+     -moz-transform: skew(-20deg);
+       -o-transform: skew(-20deg);
+}
+  
+.para-h2{
+  -webkit-transform: skew(20deg); font-size: 3em;
+}
 
 
 
@@ -101,7 +115,32 @@ header {
   .fa{
     font-size: 1.5em;
   }
+  #breadcrumb{
+  display: none;
+  }
+  #pagination{
+    margin-top: 10px;
+  }
+   #slide1,
+   #slide2
+   #slide3{
+      height: 300px;
+   }
+  
+   #contact-us{
+    display: none;
+   }
+    #button-modal-contact{
+    padding-bottom: 25px;
+   }
+   #rating-modal-1,
+   #rating-modal-2,
+   #rating-modal-3{
+    display: none;
+   }
 }
+
+
 
 /* Small devices (tablets)
 ==========================*/
@@ -147,6 +186,23 @@ header {
   #modal-content .fa{
     font-size: 2em !important ;
   }
+  #slide1,
+   #slide2
+   #slide3{
+      height: 600px;
+   }
+   #button-modal-contact{
+      display: none;
+   }
+   #services h2{
+    font-size: 2em;
+   }
+
+  .hide-rating{
+      display: none;
+  }
+  
+}
 
 /* Medium devices (desktops)
 ==========================*/
@@ -156,7 +212,13 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
   }
+  h1{
+    font-size: 4em;
+  }
 
-  
-
+}
+@media (min-width: 1025px){
+  .show-rating{
+    display: block;
+  }
 }
