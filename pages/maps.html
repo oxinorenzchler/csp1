@@ -1,0 +1,340 @@
+<DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Cove Manor | Resort & Spa</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto|Satisfy" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href='../assets/fontawesome/css/font-awesome.min.css' rel='stylesheet'>
+    <!-- Bootstrap -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../assets/css/mdb.min.css" rel="stylesheet">
+
+    <!-- Custom Stylesheet -->
+    <link href="../assets/css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Header Wrapper -->
+    <div class="container-fluid">
+      <!-- NavContainer -->
+      <div class="row">
+        <div class="col-md-12">
+         <!-- Navbar Container -->
+         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 p-0">
+          <!--Navbar-->
+          <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+
+            <!-- Navbar brand -->
+            <a class="navbar-brand lead amber-shadow" href="../index.html">Cove Manor</a>
+
+            <!-- Collapse button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Collapsible content -->
+          <div class="collapse navbar-collapse" id="basicExampleNav">
+
+            <!-- Links -->
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle amber-shadow" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
+                <span class="sr-only"></span>
+                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#featured">Featured</a>
+                  <a class="dropdown-item" href="#services">Services</a>
+                  <a class="dropdown-item" href="#testimonial">Memories</a>
+                  <a class="dropdown-item" href="#contact-form">Contact Us</a>
+                  <a class="dropdown-item" href="home.html">Back to home</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link amber-shadow" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link amber-shadow" href="maps.html">Maps</a>
+              </li>
+              <!-- Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link amber-shadow" href="careers.html">Careers</a>
+              </li>
+            </ul>
+            <!-- Links -->
+            <!-- Search -->
+            <form class="form-inline">
+              <div class="md-form mt-0">
+                <input class="form-control mr-sm-2 amber-shadow" type="text" placeholder="Search" aria-label="Search">
+              </div>
+            </form>
+            <!-- User Action -->
+            <div class="">
+             <button type="button" class="btn btn-md btn-rounded gradient-2 animated fadeIn" data-toggle="modal" data-target="#modalContactForm">
+               Book Now
+             </button>
+           </div>
+         </div><!-- Collapsible content -->
+       </nav><!--/.Navbar-->
+
+       <!--Modal Container  -->
+       <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <!--Modal: Contact form-->
+        <div class="modal-dialog cascading-modal" role="document">
+
+          <!--Content-->
+          <div class="modal-content animated fadeIn" id="modal-content">
+
+            <!--Header-->
+            <div class="modal-header primary-color white-text">
+              <h4 class="title">
+                <i class="fa fa-sign-in"></i> Please login</h4>
+                <button type="button" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <!--Body-->
+              <div class="modal-body">
+
+                <!-- Material input name -->
+                <div class="md-form form-sm">
+                  <i class="fa fa-user prefix"></i>
+                  <input type="text" id="materialFormNameModalEx1" class="form-control form-control-sm">
+                  <label for="materialFormNameModalEx1">Username/Email</label>
+                </div>
+                <!-- Password -->
+                <div class="md-form form-sm">
+                  <i class="fa fa-lock prefix"></i>
+                  <input type="password" id="materialFormEmailModalEx1" class="form-control form-control-sm">
+                  <label for="materialFormEmailModalEx1">Password</label>
+                </div>
+
+                <div class="text-center mb-3">
+                  <button id="sign-in-button" type="button" class="btn primary-color btn-block btn-rounded z-depth-1a">Sign in</button>
+                </div>
+                <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> or Sign in with:</p>
+
+                <div class="row my-3 d-flex justify-content-center">
+                  <!--Facebook-->
+                  <button type="button" class="btn btn-success btn-rounded mr-md-3 z-depth-1a btn-sm"><i class="fa fa-facebook text-center signin-with"></i></button>
+                  <!--Twitter-->
+                  <button type="button" class="btn btn-success btn-rounded mr-md-3 z-depth-1a btn-sm"><i class="fa fa-twitter blue-text signin-with"></i></button>
+                  <!--Google +-->
+                  <button type="button" class="btn btn-success btn-rounded z-depth-1a btn-sm"><i class="fa fa-google-plus blue-text signin-with"></i></button>
+                </div>
+
+                <!--Footer-->
+                <div class="modal-footer mx-1 pt-3 mb-1">
+                  <p class="font-small grey-text d-flex justify-content-end">Not a member? <a href="#" class="blue-text ml-1">Sign Up</a></p>
+                </div>         
+              </div> <!--/.Content-->
+            </div>
+          </div><!--/Modal: Contact form-->
+        </div> <!-- endModalContainer -->
+      </div><!-- navColumn -->
+    </div>
+    <!-- /row -->
+  </div>
+  <!-- /Nav Container -->
+</div>
+<!-- /endHeader Wrapper -->
+<!-- Breadcrumbs-Pagination -->
+<div class="container-fluid" id="bp-wrapper">
+ <!-- BreadCrumbs-->
+ <div class="bc-icons" id="breadcrumbs">
+   <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a class="amber-shadow" href="home.html">Home</a><i class="fa fa-angle-double-right mx-2" aria-hidden="true"></i></li>  
+    <li class="breadcrumb-item"><a class="amber-shadow" href="gallery.html">Gallery</a><i class="fa fa-angle-double-right mx-2" aria-hidden="true"></i></li>
+    <li class="breadcrumb-item lead"><a class="amber-shadow" href="#">Maps</a></li>
+  </ol>
+</div>
+<!-- /BreadCrumbs -->
+<!--Pagination-->
+<nav aria-label="pagination example">
+  <ul class="pagination pg-blue">
+
+    <!--Arrow left-->
+    <li class="page-item">
+      <a class="page-link" href="gallery.html" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+        <span class="sr-only">Previous</span>
+      </a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="home.html">1</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="gallery.html">2</a>
+    </li>
+    <li class="page-item active">
+      <a class="page-link" href="maps.html">3<span class="sr-only">(current)</span></a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="career.html">4</a>
+    </li>
+
+    <li class="page-item">
+      <a class="page-link" href="careers.html" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+        <span class="sr-only">Next</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+<!-- /endPagination -->
+</div>
+<!-- /endBreadcrumbs-Pagination -->
+<!-- Content Wrapper -->
+<div class="container-fluid"> 
+  <div class="row"> 
+    <div class="col-md-12 col-sm-12">
+      <div class="container-fluid"> 
+        <div class="row">
+         <!-- Contact Details -->
+         <div class="col-md-6 col-sm-12 text-center mb-2 lead"> 
+          <p><span><i class="fa fa-map-marker" aria-hidden="true"></i></span>Cove Manor Resort &amp; Spa</p>
+          <p><span><i class="fa fa-phone" aria-hidden="true"></i></span>(204)357-9630</p>
+          <p><span class="mr-2"><i class="fa fa-envelope" aria-hidden="true"></i></span>contact@covemanor.com</p>
+          <!-- Google Map -->
+          <div id="map"></div>
+          <!-- /endGoogle Map -->
+        </div>
+        <!-- /end Contact Details -->
+        <!-- Resort Map -->
+        <div class="col-md-6 col-sm-12"> 
+          <img src="../assets/img/resort_map.jpg" class="img-fluid">
+        </div>
+        <!-- /endResort Map -->
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- /endContent Wrapper -->
+<div class="container-fluid mt-5">
+  <!--Pagination-->
+  <nav aria-label="pagination example">
+    <ul class="pagination pg-blue">
+
+      <!--Arrow left-->
+      <li class="page-item">
+        <a class="page-link" href="gallery.html" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+          <span class="sr-only">Previous</span>
+        </a>
+      </li>
+
+      <li class="page-item">
+        <a class="page-link" href="home.html">1</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="gallery.html">2</a>
+      </li>
+      <li class="page-item active">
+        <a class="page-link" href="maps.html">3<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="career">4</a>
+      </li>
+
+      <li class="page-item">
+        <a class="page-link" href="careers.html" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+          <span class="sr-only">Next</span>
+        </a>
+      </li>
+    </ul>
+  </nav>  
+</div>
+<!-- *********************Foooter -->
+<div class="container-fluid mt-1">
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <!--Footer-->
+      <footer class="page-footer font-small blue pt-4 mt-4">
+
+        <!--Footer Links-->
+        <div class="container-fluid text-center text-md-left">
+          <div class="row">
+
+            <!--First column-->
+            <div class="col-md-6">
+              <h5 class="text-uppercase">Disclamer:</h5>
+              <p>No copyright infringment is intended. This is only for educational purposes and not for profit. Some asset/s used are not owned by the developer/s unless otherwise stated; the credit goes to the owner</p>
+              <p>CC0(Creative Common Zero)-> Liscense-> Free assets(images,audio,text,etc)</p>
+              <a href="#">Back to top<i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+            </div>
+            <!--/.First column-->
+
+            <!--Second column-->
+            <div class="col-md-6 d-flex justify-content-center">
+              <h5 class="text-uppercase">Follow us:</h5>
+              <ul class="list-unstyled d-flex ml-1" id="footer-links">
+                <li>
+                  <a href="https://wwww.facebook.com" class="mr-2"><i class="fa fa-facebook fa-2x"></i></a>
+                </li>
+                <li>
+                  <a href="https://wwww.twitter.com" class="mr-2"><i class="fa fa-twitter fa-2x"></i></a>
+                </li>
+                <li>
+                  <a href="https://wwww.instagram.com" class="mr-2"><i class="fa fa-instagram fa-2x"></i></a>
+                </li>
+                <li>
+                  <a href="https://wwww.youtube.com"><i class="fa fa-youtube fa-2x"></i></a>
+                </li>
+              </ul>
+            </div>
+            <!--/.Second column-->
+          </div>
+        </div>
+        <!--/.Footer Links-->
+
+        <!--Copyright-->
+        <div class="footer-copyright py-3 text-center">
+          Designed by:
+          <a href="https://mdbootstrap.com/material-design-for-bootstrap/">Renzchler Oxiño</a>
+          <a href="https://github.com/oxinorenzchler">Renzchler Oxiño</a>
+          Powered by: 
+          <a href="https://tuitt.com/">Tuitt</a>
+        </div>
+        <!--/.Copyright-->
+      </footer>
+      <!--/.Footer-->
+    </div>
+  </div>
+</div>
+<!--/.Footer-->
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script type="text/javascript" src="../assets/js/jquery-3.2.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="../assets/js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="../assets/js/mdb.min.js"></script>
+<!-- Maps -->
+<script>
+  function initMap() {
+    var uluru = {lat: 11.199204, lng:  119.376642};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 15,
+      center: uluru
+    });
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+    });
+  }
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvbpiYCfS8ffaGMqcPOAX4ANu5elkKjnE&callback=initMap">
+</script>
+</body>
+</html>
+
