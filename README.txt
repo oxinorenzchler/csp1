@@ -1,40 +1,11 @@
-Material Design for Bootstrap
+DISCLAMER:
+No copyright infringment is intended. This is only for educational purposes and not for profit. Some asset/s used are not owned by the developer/s unless otherwise stated; the credit goes to the owner
 
-Version: MDB Free 4.5.0
-
-Documentation:
-https://mdbootstrap.com/
-
-Getting started:
-https://mdbootstrap.com/getting-started/
-
-FAQ
-https://mdbootstrap.com/faq/
-
-Support:
-https://mdbootstrap.com/forums/forum/support/
-
-Tutorials:
-MDB-Bootstrap: https://mdbootstrap.com/bootstrap-tutorial/
-MDB-Wordpress: https://mdbootstrap.com/wordpress-tutorial/
-
-ChangeLog
-https://mdbootstrap.com/changelog/
-
-Templates:
-https://mdbootstrap.com/templates/
-
-Freebies
-https://mdbootstrap.com/freebies/
-
-License:
-https://mdbootstrap.com/license/
-
-Facebook: https://facebook.com/mdbootstrap
-Twitter: https://twitter.com/MDBootstrap
-Google+: https://plus.google.com/u/0/+Mdbootstrap/posts
-Dribbble: https://dribbble.com/mdbootstrap
+CC0(Creative Common Zero)-> Liscense-> Free assets(images,audio,text,etc)
 
 
-Contact:
-office@mdbootstrap.com
+Project for Capstone 1 - Cove Manor Resort & Spa
+
+Web Designer/Developer: Renzchler Oxiño
+
+Powered by: Tuitt.ph
