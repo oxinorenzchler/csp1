@@ -17,6 +17,7 @@
 
     <!-- Custom Stylesheet -->
     <link href="../assets/css/style.css" rel="stylesheet">
+    
   </head>
 
   <body>
@@ -31,7 +32,7 @@
           <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
 
             <!-- Navbar brand -->
-            <a class="navbar-brand lead amber-shadow" href="../index.html">Cove Manor</a>
+            <a class="navbar-brand lead amber-shadow" href="../index.html"><i><img src="../assets/img/CM-logo.png" alt="Cove Manor Logo"></i></a>
 
             <!-- Collapse button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
@@ -207,7 +208,7 @@
         <!-- /end Contact Details -->
         <!-- Resort Map -->
         <div class="col-md-6 col-sm-12"> 
-          <img src="../assets/img/resort_map.jpg" class="img-fluid">
+          <img src="../assets/img/resort_map.jpg" class="img-fluid" id="zoom_01" data-zoom-image="../assets/img/resort_map_zoom.jpg">
         </div>
         <!-- /endResort Map -->
       </div>
@@ -334,6 +335,29 @@
 </script>
 <script async defer
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvbpiYCfS8ffaGMqcPOAX4ANu5elkKjnE&callback=initMap">
+</script>
+<!-- Zoom Script Import -->
+    <script type="text/javascript" src="../assets/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="../assets/js/jquery.elevatezoom.js"></script>
+    <script type="text/javascript" src="../assets/js/jquery.elevateZoom-3.0.8.min.js"></script>
+<!-- Zoom -->
+<script>
+    $('#zoom_01').elevateZoom({
+    zoomType: "inner",
+cursor: "crosshair",
+zoomWindowFadeIn: 500,
+zoomWindowFadeOut: 750
+   }); 
+</script>
+<!-- Link Favicon -->
+<script type="text/javascript">
+  (function() {
+    var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+    link.type = 'image/x-icon';
+    link.rel = 'shortcut icon';
+    link.href = '../favicon.ico';
+    document.getElementsByTagName('head')[0].appendChild(link);
+})();
 </script>
 </body>
 </html>

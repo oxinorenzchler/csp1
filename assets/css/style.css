@@ -107,6 +107,9 @@ input[placeholder="Search"]{
 .mt-10{
   margin-top: 10px !important;
  }
+ #zoom_01{
+  object-fit: cover;
+ }
 
 /*Small devices (mobile)
 =======================*/
