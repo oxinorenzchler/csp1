@@ -208,9 +208,6 @@ input[placeholder="Search"]{
 /* Medium devices (desktops)
 ==========================*/
 @media (min-width: 992px) {
-  #carousel-slide{
-    height: 100vh;
-  }
   #landing-wrapper{
     height: 100vh; 
     background-image: url('../img/landing-background-desktop.jpg'); 
