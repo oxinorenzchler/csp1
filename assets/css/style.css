@@ -5,6 +5,7 @@
   padding: 0px;
   box-sizing: border-box;
 }
+/*Landing Page*/
 body{
   background-image: url('../img/body-background.jpeg');
   background-attachment: fixed;
@@ -22,14 +23,14 @@ body{
   font-family: var(--satisfy);
 }
 .shadow-1{
-    text-shadow: 2px 2px 5px #000;
+  text-shadow: 2px 2px 5px #000;
 }
 .shadow-2{
-    text-shadow: 1px 1px 1px #fff;
+  text-shadow: 1px 1px 1px #fff;
 }
 .amber-shadow{
   color: #ffc107 !important;
-   text-shadow: 1px 1px 1px #000;
+  text-shadow: 1px 1px 1px #000;
 }
 .h-1{
   font-size: 2em;
@@ -38,44 +39,44 @@ body{
   font-size: 2.5em;
 }
 
-  .btn-rounded{
-    border-radius: 30px;
-  }
-  .gradient{
-    background-image: linear-gradient(-45deg, #63C650 0%, #A6FD8C 100%);
-  }
-  .gradient-2{
-    background-image: linear-gradient(-221deg, #FEE140 0%, #FA709A 100%);
-  }
-  .gradient-3{
-        background-image: linear-gradient(-225deg, #EE69FF 0%, #955AF9 100%);
+.btn-rounded{
+  border-radius: 30px;
+}
+.gradient{
+  background-image: linear-gradient(-45deg, #63C650 0%, #A6FD8C 100%);
+}
+.gradient-2{
+  background-image: linear-gradient(-221deg, #FEE140 0%, #FA709A 100%);
+}
+.gradient-3{
+  background-image: linear-gradient(-225deg, #EE69FF 0%, #955AF9 100%);
 
-  }
-  .gradient-4{
-              background-image: linear-gradient(-225deg, #FF69CD 0%, #F95A6D 100%);
+}
+.gradient-4{
+  background-image: linear-gradient(-225deg, #FF69CD 0%, #F95A6D 100%);
 
-  }
-  .gradient-5{
-              background-image: linear-gradient(-225deg, #1FA2FF 30%, #A6FFCB 100%);
+}
+.gradient-5{
+  background-image: linear-gradient(-225deg, #1FA2FF 30%, #A6FFCB 100%);
 
-  }
-  .fa-rounded{
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
-  }
-  .border-radius-1{
-    border-radius: 50px;
-  }
-  .fa-cog{
-    font-size: 1em;
-  }
-  #gallery-title{
-    margin-top: 66px;
-  }
-  #bp-wrapper{
-    margin-top: 66px;
-  }
+}
+.fa-rounded{
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+.border-radius-1{
+  border-radius: 50px;
+}
+.fa-cog{
+  font-size: 1em;
+}
+#gallery-title{
+  margin-top: 66px;
+}
+#bp-wrapper{
+  margin-top: 66px;
+}
 .vh-100{
   height: 100vh;
 }
@@ -83,12 +84,12 @@ body{
   list-style-type: none;
 }
 ::placeholder{ /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #ffc107 !important;
-   text-shadow: 1px 1px 1px #000;
+  color: #ffc107 !important;
+  text-shadow: 1px 1px 1px #000;
 }
 input[placeholder="Search"]{
   border-color: #ffc107 !important;
-   text-shadow: 1px 1px 1px #000;
+  text-shadow: 1px 1px 1px #000;
 }
 #contact-details{
   background-color: #252523;
@@ -106,10 +107,10 @@ input[placeholder="Search"]{
 }
 .mt-10{
   margin-top: 10px !important;
- }
- #zoom_01{
+}
+#zoom_01{
   object-fit: cover;
- }
+}
 
 /*Small devices (mobile)
 =======================*/
@@ -127,33 +128,30 @@ input[placeholder="Search"]{
     font-size: 1.5em;
   }
   #breadcrumbs{
-  display: none;
+    display: none;
   }
- #footer-links{
-  text-align: center;
- }
- #slide1{
-  height: 300px;
- }
-#map{
-  height: 200px;
+  #footer-links{
+    text-align: center;
+  }
+  #slide1{
+    height: 300px;
+  }
+  #map{
+    height: 200px;
+  }
 }
-}
-
-
-
 /* Small devices (tablets)
 ==========================*/
 @media (min-width: 768px) {
-   
-#landing-wrapper{
+
+  #landing-wrapper{
     height: 100vh; 
     background-image: url('../img/landing-background-tablet.jpg'); 
     background-size: cover; 
     background-repeat: no-repeat;
   }
   #text-content h1{
-      font-size: 5em;
+    font-size: 5em;
   }
   #text-content > p{
     font-size: 2em;
@@ -188,26 +186,25 @@ input[placeholder="Search"]{
     font-size: 2em !important ;
   }
   #slide1,
-   #slide2
-   #slide3{
-      height: 600px;
-   }
-   #button-modal-contact{
-      display: none;
-   }
-   #services h2{
+  #slide2
+  #slide3{
+    height: 600px;
+  }
+  #button-modal-contact{
+    display: none;
+  }
+  #services h2{
     font-size: 2em;
-   }
+  }
 
   .hide-rating{
-      display: none;
+    display: none;
   }
-#career-bg{
-  height: 500px;
-}
+  #career-bg{
+    height: 500px;
+  }
   
 }
-
 /* Medium devices (desktops)
 ==========================*/
 @media (min-width: 992px) {
@@ -234,18 +231,18 @@ input[placeholder="Search"]{
   }
   .side-trigger-button{
     display: none;
-   }
+  }
   h1{
     font-size: 5em;
   }
-   #services-title,
-   #memories-title{
+  #services-title,
+  #memories-title{
     font-size: 5em !important;
-   }
-   #map{
-  height: 350px;
-}
-#career-bg{
-  height: 500px;
-}
+  }
+  #map{
+    height: 350px;
+  }
+  #career-bg{
+    height: 500px;
+  }
 }
