@@ -14,7 +14,6 @@
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <link href="../assets/css/mdb.min.css" rel="stylesheet">
-
     <!-- Custom Stylesheet -->
     <link href="../assets/css/style.css" rel="stylesheet">
     
@@ -25,9 +24,10 @@
     <div class="container-fluid">
       <!-- NavContainer -->
       <div class="row">
-        <div class="col-md-12">
+  
          <!-- Navbar Container -->
          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 p-0">
+
           <!--Navbar-->
           <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
 
@@ -35,31 +35,29 @@
             <a class="navbar-brand lead amber-shadow" href="../index.html"><i><img src="../assets/img/covemanor-logo.png" alt="Cove Manor Logo"></i></a>
 
             <!-- Collapse button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#cmNavBar" aria-controls="cmNavBar"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
 
           <!-- Collapsible content -->
-          <div class="collapse navbar-collapse" id="basicExampleNav">
-
+          <div class="collapse navbar-collapse" id="cmNavBar">
             <!-- Links -->
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown active">
                 <a class="nav-link dropdown-toggle amber-shadow" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
                 <span class="sr-only"></span>
                 <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#featured">Featured</a>
-                  <a class="dropdown-item" href="#services">Services</a>
-                  <a class="dropdown-item" href="#testimonial">Memories</a>
-                  <a class="dropdown-item" href="#contact-form">Contact Us</a>
-                  <a class="dropdown-item" href="home.html">Back to home</a>
+                  <a class="dropdown-item" href="home.html#featured">Featured</a>
+                  <a class="dropdown-item" href="home.html#services">Services</a>
+                  <a class="dropdown-item" href="home.html#testimonial">Memories</a>
+                  <a class="dropdown-item" href="home.html#contact-form">Contact Us</a>
                 </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link amber-shadow" href="gallery.html">Gallery</a>
               </li>
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a class="nav-link amber-shadow" href="maps.html">Maps</a>
               </li>
               <!-- Dropdown -->
@@ -68,12 +66,14 @@
               </li>
             </ul>
             <!-- Links -->
+
             <!-- Search -->
             <form class="form-inline">
               <div class="md-form mt-0">
                 <input class="form-control mr-sm-2 amber-shadow" type="text" placeholder="Search" aria-label="Search">
               </div>
             </form>
+
             <!-- User Action -->
             <div class="">
              <button type="button" class="btn btn-md btn-rounded gradient-2 animated fadeIn" data-toggle="modal" data-target="#modalContactForm">
@@ -81,7 +81,7 @@
              </button>
            </div>
          </div><!-- Collapsible content -->
-       </nav><!--/.Navbar-->
+       </nav><!--/Navbar-->
 
        <!--Modal Container  -->
        <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -99,125 +99,61 @@
                   <span aria-hidden="true">×</span>
                 </button>
               </div>
-              <!--Body-->
+              <!-- Modal Body-->
               <div class="modal-body">
 
                 <!-- Material input name -->
                 <div class="md-form form-sm">
                   <i class="fa fa-user prefix"></i>
-                  <input type="text" id="materialFormNameModalEx1" class="form-control form-control-sm">
-                  <label for="materialFormNameModalEx1">Username/Email</label>
+                  <input type="text" name="username"  id="username" class="form-control form-control-sm">
+                  <label for="username">Username/Email</label>
                 </div>
                 <!-- Password -->
                 <div class="md-form form-sm">
                   <i class="fa fa-lock prefix"></i>
-                  <input type="password" id="materialFormEmailModalEx1" class="form-control form-control-sm">
-                  <label for="materialFormEmailModalEx1">Password</label>
+                  <input type="password" name="password" id="password" class="form-control form-control-sm">
+                  <label for="password">Password</label>
                 </div>
 
                 <div class="text-center mb-3">
-                  <button id="sign-in-button" type="button" class="btn primary-color btn-block btn-rounded z-depth-1a">Sign in</button>
+                  <button id="sign-in-button" type="button" class="btn primary-color btn-block btn-rounded z-depth-1">Sign in</button>
+                  <a href="booking.html" class="btn btn-block btn-rounded primary-color">Book as Guest</a>
                 </div>
                 <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> or Sign in with:</p>
 
                 <div class="row my-3 d-flex justify-content-center">
                   <!--Facebook-->
-                  <button type="button" class="btn btn-success btn-rounded mr-md-3 z-depth-1a btn-sm"><i class="fa fa-facebook text-center signin-with"></i></button>
+                  <button type="button" class="btn btn-success btn-rounded mr-md-3 z-depth-1 btn-sm"><i class="fa fa-facebook text-center signin-with"></i></button>
                   <!--Twitter-->
-                  <button type="button" class="btn btn-success btn-rounded mr-md-3 z-depth-1a btn-sm"><i class="fa fa-twitter blue-text signin-with"></i></button>
+                  <button type="button" class="btn btn-success btn-rounded mr-md-3 z-depth-1 btn-sm"><i class="fa fa-twitter blue-text signin-with"></i></button>
                   <!--Google +-->
-                  <button type="button" class="btn btn-success btn-rounded z-depth-1a btn-sm"><i class="fa fa-google-plus blue-text signin-with"></i></button>
+                  <button type="button" class="btn btn-success btn-rounded z-depth-1 btn-sm"><i class="fa fa-google-plus blue-text signin-with"></i></button>
                 </div>
 
                 <!--Footer-->
                 <div class="modal-footer mx-1 pt-3 mb-1">
                   <p class="font-small grey-text d-flex justify-content-end">Not a member? <a href="#" class="blue-text ml-1">Sign Up</a></p>
-                </div>         
-              </div> <!--/.Content-->
-            </div>
+                </div>  
+
+              </div> <!-- Modal Body -->
+            </div><!--/Content-->
           </div><!--/Modal: Contact form-->
-        </div> <!-- endModalContainer -->
+        </div> <!-- endModal Container -->
       </div><!-- navColumn -->
-    </div>
-    <!-- /row -->
-  </div>
-  <!-- /Nav Container -->
-</div>
-<!-- /endHeader Wrapper -->
+    </div> <!-- /row -->
+</div><!-- /Header Wrapper -->
+
 <!-- Breadcrumbs-Pagination -->
 <div class="container-fluid" id="bp-wrapper">
- <!-- BreadCrumbs-->
- <div class="bc-icons" id="breadcrumbs">
-   <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a class="amber-shadow" href="home.html">Home</a><i class="fa fa-angle-double-right mx-2" aria-hidden="true"></i></li>  
-    <li class="breadcrumb-item"><a class="amber-shadow" href="gallery.html">Gallery</a><i class="fa fa-angle-double-right mx-2" aria-hidden="true"></i></li>
-    <li class="breadcrumb-item lead"><a class="amber-shadow" href="#">Maps</a></li>
-  </ol>
-</div>
-<!-- /BreadCrumbs -->
-<!--Pagination-->
-<nav aria-label="pagination example">
-  <ul class="pagination pg-blue">
-
-    <!--Arrow left-->
-    <li class="page-item">
-      <a class="page-link" href="gallery.html" aria-label="Previous">
-        <span aria-hidden="true">&laquo;</span>
-        <span class="sr-only">Previous</span>
-      </a>
-    </li>
-    <li class="page-item">
-      <a class="page-link" href="home.html">1</a>
-    </li>
-    <li class="page-item">
-      <a class="page-link" href="gallery.html">2</a>
-    </li>
-    <li class="page-item active">
-      <a class="page-link" href="maps.html">3<span class="sr-only">(current)</span></a>
-    </li>
-    <li class="page-item">
-      <a class="page-link" href="careers.html">4</a>
-    </li>
-
-    <li class="page-item">
-      <a class="page-link" href="careers.html" aria-label="Next">
-        <span aria-hidden="true">&raquo;</span>
-        <span class="sr-only">Next</span>
-      </a>
-    </li>
-  </ul>
-</nav>
-<!-- /endPagination -->
-</div>
-<!-- /endBreadcrumbs-Pagination -->
-<!-- Content Wrapper -->
-<div class="container-fluid"> 
-  <div class="row"> 
-    <div class="col-md-12 col-sm-12">
-      <div class="container-fluid"> 
-        <div class="row">
-         <!-- Contact Details -->
-         <div class="col-md-6 col-sm-12 text-center mb-2 lead"> 
-          <p><span><i class="fa fa-map-marker" aria-hidden="true"></i></span>Cove Manor Resort &amp; Spa</p>
-          <p><span><i class="fa fa-phone" aria-hidden="true"></i></span>(204)357-9630</p>
-          <p><span class="mr-2"><i class="fa fa-envelope" aria-hidden="true"></i></span>contact@covemanor.com</p>
-          <!-- Google Map -->
-          <div id="map"></div>
-          <!-- /endGoogle Map -->
-        </div>
-        <!-- /end Contact Details -->
-        <!-- Resort Map -->
-        <div class="col-md-6 col-sm-12"> 
-          <img src="../assets/img/resort_map.jpg" class="img-fluid" id="zoom_01" data-zoom-image="../assets/img/resort_map_zoom.jpg">
-        </div>
-        <!-- /endResort Map -->
-      </div>
-    </div>
+   <!-- BreadCrumbs-->
+   <div class="bc-icons" id="breadcrumbs">
+     <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a class="amber-shadow" href="home.html">Home</a><i class="fa fa-angle-double-right mx-2" aria-hidden="true"></i></li>  
+      <li class="breadcrumb-item"><a class="amber-shadow" href="gallery.html">Gallery</a><i class="fa fa-angle-double-right mx-2" aria-hidden="true"></i></li>
+      <li class="breadcrumb-item lead"><a class="amber-shadow" href="#">Maps</a></li>
+    </ol>
   </div>
-</div>
-</div>
-<!-- /endContent Wrapper -->
-<div class="container-fluid mt-5">
+
   <!--Pagination-->
   <nav aria-label="pagination example">
     <ul class="pagination pg-blue">
@@ -229,7 +165,6 @@
           <span class="sr-only">Previous</span>
         </a>
       </li>
-
       <li class="page-item">
         <a class="page-link" href="home.html">1</a>
       </li>
@@ -250,65 +185,131 @@
         </a>
       </li>
     </ul>
-  </nav>  
-</div>
-<!-- *********************Foooter -->
-<div class="container-fluid mt-1">
-  <div class="row">
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-      <!--Footer-->
-      <footer class="page-footer font-small blue pt-4 mt-4">
+  </nav>
+</div><!-- /endBreadcrumbs-Pagination -->
 
-        <!--Footer Links-->
-        <div class="container-fluid text-center text-md-left">
+<!-- Content Wrapper -->
+<div class="container-fluid"> 
+  <!-- row -->
+  <div class="row"> 
+    <!-- Content Column -->
+    <div class="col-md-12 col-sm-12">
+        <!-- Body Container -->
+        <div class="container-fluid"> 
           <div class="row">
+           <!-- Contact Details -->
 
-            <!--First column-->
-            <div class="col-md-6">
-              <h5 class="text-uppercase">Disclamer:</h5>
-              <p>No copyright infringment is intended. This is only for educational purposes and not for profit. Some asset/s used are not owned by the developer/s unless otherwise stated; the credit goes to the owner</p>
-              <p>CC0(Creative Common Zero)-> Liscense-> Free assets(images,audio,text,etc)</p>
-              <a href="#">Back to top<i class="fa fa-arrow-up" aria-hidden="true"></i></a>
-            </div>
-            <!--/.First column-->
-
-            <!--Second column-->
-            <div class="col-md-6 d-flex justify-content-center">
-              <h5 class="text-uppercase">Follow us:</h5>
-              <ul class="list-unstyled d-flex ml-1" id="footer-links">
-                <li>
-                  <a href="https://wwww.facebook.com" class="mr-2"><i class="fa fa-facebook fa-2x"></i></a>
-                </li>
-                <li>
-                  <a href="https://wwww.twitter.com" class="mr-2"><i class="fa fa-twitter fa-2x"></i></a>
-                </li>
-                <li>
-                  <a href="https://wwww.instagram.com" class="mr-2"><i class="fa fa-instagram fa-2x"></i></a>
-                </li>
-                <li>
-                  <a href="https://wwww.youtube.com"><i class="fa fa-youtube fa-2x"></i></a>
-                </li>
-              </ul>
-            </div>
-            <!--/.Second column-->
+           <div class="col-md-6 col-sm-12 text-center mb-2 lead"> 
+            <h1 class="amber-shadow">Resort Map</h1>
+            <p><span><i class="fa fa-map-marker" aria-hidden="true"></i></span>Cove Manor Resort &amp; Spa</p>
+            <p><span><i class="fa fa-phone" aria-hidden="true"></i></span>(204)357-9630</p>
+            <p><span class="mr-2"><i class="fa fa-envelope" aria-hidden="true"></i></span>contact@covemanor.com</p>
+            <!-- Google Map -->
+            <div id="map"></div>
+          </div>
+          
+          <!-- Resort Map -->
+          <div class="col-md-6 col-sm-12"> 
+            <img src="../assets/img/resort_map.jpg" class="img-fluid" id="zoom_01" data-zoom-image="../assets/img/resort_map_zoom.jpg">
           </div>
         </div>
-        <!--/.Footer Links-->
+      </div><!-- /Body Container -->
+    </div><!-- /Content Column -->
+  </div><!-- /row -->
+</div><!-- /Content Wrapper -->
+
+<!-- Pagination -->
+<div class="container-fluid mt-5">
+  <!--Pagination-->
+  <nav aria-label="pagination example">
+      <ul class="pagination pg-blue">
+
+          <!--Arrow left-->
+          <li class="page-item">
+              <a class="page-link" href="home.html" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                  <span class="sr-only">Previous</span>
+              </a>
+          </li>
+
+          <li class="page-item">
+              <a class="page-link" href="home.html">1</a>
+          </li>
+          <li class="page-item active">
+            <a class="page-link" href="gallery.html">2<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="maps.html">3</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="career">4</a>
+          </li>
+          
+          <li class="page-item">
+              <a class="page-link" href="maps.html" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                  <span class="sr-only">Next</span>
+              </a>
+          </li>
+      </ul>
+  </nav>  
+</div><!-- /Pagination -->
+
+<!-- Foooter Wrapper -->
+<div class="container-fluid mt-1">
+  <!-- row -->
+  <div class="row">
+    <!-- Footer Column Wrapper -->
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <!--Footer Body-->
+      <footer class="page-footer font-small blue pt-4 mt-4">
+          <!--Footer Links-->
+          <div class="container-fluid text-center text-md-left">
+              <!-- row -->
+              <div class="row">
+
+                  <!--First column-->
+                  <div class="col-md-6 mb-1">
+                      <h5 class="text-uppercase">Disclamer:</h5>
+                      <p>No copyright infringment is intended. This is only for educational purposes and not for profit. Some asset/s used are not owned by the developer/s unless otherwise stated; the credit goes to the owner</p>
+                      <p>CC0(Creative Common Zero)-> Liscense-> Free assets(images,audio,text,etc)</p>
+                      <a href="#">Back to top<i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+                  </div>
+                
+                  <!--Second column-->
+                  <div class="col-md-6 d-flex justify-content-center">
+                      <h5 class="text-uppercase">Follow us:</h5>
+                      <ul class="list-unstyled d-flex ml-1" id="footer-links">
+                          <li>
+                              <a href="https://wwww.facebook.com" class="mr-2"><i class="fa fa-facebook fa-2x"></i></a>
+                          </li>
+                          <li>
+                              <a href="https://wwww.twitter.com" class="mr-2"><i class="fa fa-twitter fa-2x"></i></a>
+                          </li>
+                          <li>
+                              <a href="https://wwww.instagram.com" class="mr-2"><i class="fa fa-instagram fa-2x"></i></a>
+                          </li>
+                          <li>
+                              <a href="https://wwww.youtube.com"><i class="fa fa-youtube fa-2x"></i></a>
+                          </li>
+                      </ul>
+                  </div>
+              </div><!-- /row -->
+          </div><!--/Footer Links-->
 
         <!--Copyright-->
         <div class="footer-copyright py-3 text-center">
-          Designed by:
-          <a href="https://github.com/oxinorenzchler">Renzchler Oxiño</a>
-          Powered by: 
-          <a href="https://tuitt.com/">Tuitt</a>
+            Designed by:
+            <a href="https://github.com/oxinorenzchler">Renzchler Oxiño</a>
+            Powered by: 
+            <a href="https://tuitt.com/">Tuitt</a>
         </div>
-        <!--/.Copyright-->
-      </footer>
-      <!--/.Footer-->
-    </div>
-  </div>
-</div>
-<!--/.Footer-->
+  
+      </footer><!--/Footer Body-->
+    </div><!-- Footer Column Wrapper -->
+  </div><!-- /row -->
+</div><!--/Footer Wrapper-->
+
 <!-- SCRIPTS -->
 <!-- JQuery -->
 <script type="text/javascript" src="../assets/js/jquery-3.2.1.min.js"></script>
