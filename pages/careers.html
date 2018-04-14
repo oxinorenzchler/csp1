@@ -334,7 +334,9 @@
                   </div>
                 
                   <!--Second column-->
-                  <div class="col-md-6 d-flex justify-content-center">
+                  <div class="col-md-6">
+                    <div class="d-flex justify-content-center">
+                      
                       <h5 class="text-uppercase">Follow us:</h5>
                       <ul class="list-unstyled d-flex ml-1" id="footer-links">
                           <li>
@@ -350,6 +352,11 @@
                               <a href="https://wwww.youtube.com"><i class="fa fa-youtube fa-2x"></i></a>
                           </li>
                       </ul>
+                    </div>
+                      <!-- Google Translate Plugin -->
+                      <div class="row justify-content-center">
+                        <p id="google_translate_element"></p>
+                      </div>     
                   </div>
               </div><!-- /row -->
           </div><!--/Footer Links-->
@@ -386,6 +393,12 @@
     document.getElementsByTagName('head')[0].appendChild(link);
 })();
 </script>
+<!-- Google Translate -->
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
 
