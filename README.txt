@@ -6,6 +6,8 @@ CC0(Creative Common Zero)-> Liscense-> Free assets(images,audio,text,etc)
 
 Project for Capstone 1 - Cove Manor Resort & Spa
 
+Technology: HTML5 CSS3 Javascript Bootstrap-4 MDBootstrap Google Map API
+
 Web Designer/Developer: Renzchler Oxiño
 
 Powered by: Tuitt.ph
