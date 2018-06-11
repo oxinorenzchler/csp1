@@ -4,7 +4,6 @@
   padding: 0px;
   box-sizing: border-box;
 }
-
 /*Landing Page*/
 body{
   background-image: url('../img/body-background.jpeg');
@@ -17,6 +16,9 @@ body{
   --raleway:'Raleway', sans-serif;
   --satisfy: 'Satisfy', cursive;
 }
+#navbar{
+  background-color: #8C144E;
+}
 .raleway{
   font-family: var(--raleway);
 }
@@ -24,7 +26,7 @@ body{
   font-family: var(--satisfy);
 }
 .shadow-1{
-  text-shadow: 2px 2px 5px #000;
+  text-shadow: 1px 5px 10px #000;
 }
 .shadow-2{
   text-shadow: 1px 1px 1px #fff;
@@ -76,6 +78,9 @@ body{
 }
 .list-stlye-none{
   list-style-type: none;
+}
+.carousel-caption{
+  font-family: var(--raleway);
 }
 ::placeholder{ /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #ffc107 !important;
@@ -136,6 +141,7 @@ input[placeholder="Search"]{
   #payment-list{
     display: none;
   }
+ 
 }
 /* Small devices (tablets)
 ==========================*/
@@ -200,7 +206,9 @@ input[placeholder="Search"]{
   #career-bg{
     height: 500px;
   }
-  
+  .h3-responsive{
+    font-size: 3em;
+  }
 }
 /* Medium devices (desktops)
 ==========================*/
@@ -210,6 +218,9 @@ input[placeholder="Search"]{
     background-image: url('../img/landing-background-desktop.jpg'); 
     background-size: cover; 
     background-repeat: no-repeat;
+  }
+  .h3-responsive{
+    font-size: 5em;
   }
 }
 

@@ -16,6 +16,11 @@
     <link href="../assets/css/mdb.min.css" rel="stylesheet">
     <!-- Custom Stylesheet -->
     <link href="../assets/css/style.css" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
 
   </head>
 
@@ -29,7 +34,7 @@
          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 p-0">
 
           <!--Navbar-->
-          <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+          <nav class="navbar navbar-expand-lg navbar-dark" id="navbar" data-spy="affix" data-offset-top="197">
 
             <!-- Navbar brand -->
             <a class="navbar-brand lead amber-shadow" href="../index.html"><i><img src="../assets/img/covemanor-logo.png" alt="Cove Manor Logo"></i></a>
@@ -160,11 +165,23 @@
         <div class="carousel-inner" role="listbox" id="carousel-inner-container">
 
           <div class="carousel-item active">
+            <!--Mask color-->
+            <div class="view zoom overlay">
+              <img class="d-block w-100" src="../assets/img/background-3.jpg" alt="First slide" id="slide1">
+              <div class="mask rgba-black-light"></div>
+            </div>
+            <div class="carousel-caption flex-column flex-center">
+              <h3 class="h3-responsive shadow-1 animated fadeIn h-3">Bayview Cabins</h3>
+              <p class="shadow-1 animated fadeIn">Be captivated with a stunning paradise</p>
+            </div>
+          </div>
+
+          <div class="carousel-item ">
             <div class="view zoom overlay">
               <img class="d-block w-100" src="../assets/img/miranas-pool.jpg" alt="Mirana's Pool" id="slide1" class="img-fluid">
               <div class="mask rgba-black-light"></div>
             </div>
-            <div class="carousel-caption">
+            <div class="carousel-caption flex-column flex-center">
               <h3 class="h3-responsive shadow-1 animated fadeIn" id="slide1-title">Mirana's Pool</h3>
               <p class="shadow-1 animated fadeIn" id="slide2-title">Splash with a world class pool</p>
             </div>
@@ -176,23 +193,12 @@
               <img class="d-block w-100" src="../assets/img/background-2.jpg" alt="Island Pearl Restaurant" id="slide1">
               <div class="mask wave rgba-black-light"></div>
             </div>
-            <div class="carousel-caption">
+            <div class="carousel-caption flex-column flex-center">
               <h3 class="h3-responsive shadow-1 animated fadeIn" i>Island Pearl Restaurant</h3>
               <p class="shadow-1 animated fadeIn">Have the most romantic dinner with your loved one.</p>
             </div>
           </div>
 
-          <div class="carousel-item">
-            <!--Mask color-->
-            <div class="view zoom overlay">
-              <img class="d-block w-100" src="../assets/img/background-3.jpg" alt="First slide" id="slide1">
-              <div class="mask rgba-black-light"></div>
-            </div>
-            <div class="carousel-caption">
-              <h3 class="h3-responsive shadow-1 animated fadeIn h-3">Bayview Cabins</h3>
-              <p class="shadow-1 animated fadeIn">Be captivated with a stunning paradise</p>
-            </div>
-          </div>
         </div> <!--/Slides-->
        
         <!--Controls-->
@@ -405,9 +411,8 @@
             <div class="card-body">
               <!--Name-->
               <h4 class="card-title amber-shadow">John Doe</h4>
-              <hr>
               <!--Quotation-->
-              <p class="amber-shadow"><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci</p>
+              <p class="amber-shadow">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci"</p>
               <button class="btn btn-sm btn-primary">Read More</button>
             </div>
           </div>
@@ -420,9 +425,8 @@
             <div class="card-body">
               <!--Name-->
               <h4 class="card-title amber-shadow">Jane Doe</h4>
-              <hr>
               <!--Quotation-->
-              <p class="amber-shadow"><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci</p>
+              <p class="amber-shadow">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci"</p>
               <button class="btn btn-sm btn-primary">Read More</button>
             </div>
           </div>
@@ -435,9 +439,8 @@
             <div class="card-body">
               <!--Name-->
               <h4 class="card-title amber-shadow">Jr. Doe</h4>
-              <hr>
               <!--Quotation-->
-              <p class="amber-shadow"><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci</p>
+              <p class="amber-shadow">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci</p>
               <button class="btn btn-sm btn-primary">Read More</button>
             </div>
           </div>
@@ -680,6 +683,7 @@ function googleTranslateElementInit() {
   new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
 }
 </script><script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script type="text/javascript" src="../assets/js/script.js"></script>
 </body>
 
 </html>

@@ -29,7 +29,7 @@
          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 p-0">
 
           <!--Navbar-->
-          <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+          <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
 
             <!-- Navbar brand -->
             <a class="navbar-brand lead amber-shadow" href="../index.html"><i><img src="../assets/img/covemanor-logo.png" alt="Cove Manor Logo"></i></a>
@@ -182,7 +182,7 @@
                   <li class="page-item">
                     <a class="page-link" href="maps.html">3</a>
                   </li>
-                  <li class="page-item"><a class="page-link" href="career">4</a>
+                  <li class="page-item"><a class="page-link" href="careers.html">4</a>
                   </li>
                   
                   <li class="page-item">
@@ -204,9 +204,24 @@
                 </div>
                 <h3 class="amber-shadow text-left">Apulit Island</h3>
                 <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. <span><a href="../assets/img/Apulit-Island.jpg" class="btn btn-sm btn-primary btn-rounded">View <i class="fa fa-eye" aria-hidden="true"></i></a></span></p>
+                tempor incididunt ut labore et dolore magna aliqua. <span><button href="../assets/img/Apulit-Island.jpg" class="btn btn-sm btn-primary btn-rounded" data-toggle="modal" data-target="#content-1">View <i class="fa fa-eye" aria-hidden="true"></i></button></span></p>
               </div>
-
+              <!-- Modal -->
+              <div class="modal fade" id="content-1" tabindex="-1" role="dialog" aria-labelledby="Apulit-Island" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <h5 class="modal-title" id="Apulit-Island">Apulit Island</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                              </button>
+                          </div>
+                          <div class="modal-body">
+                              <img src="../assets/img/Apulit-Island.jpg" class="img-fluid w-100 img-thumbnail" alt="Apulit Island">
+                          </div>
+                      </div>
+                  </div>
+              </div>
               <!-- Content2 -->
               <div class="col-lg-4 cold-md-4 col-sm-12 col-xs-12">
                 <div class="view zoom">
@@ -215,9 +230,24 @@
                 </div>
                 <h3 class="amber-shadow text-left">Lagen Island</h3>
                 <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. <span><a href="../assets/img/Lagen-Island.jpg" class="btn btn-sm btn-primary btn-rounded">View <i class="fa fa-eye" aria-hidden="true"></i></a></span></p>
+                tempor incididunt ut labore et dolore magna aliqua. <span><button class="btn btn-sm btn-primary btn-rounded" data-toggle="modal" data-target="#content-2">View <i class="fa fa-eye" aria-hidden="true"></i></button></span></p>
               </div>
-
+              <!-- Modal -->
+              <div class="modal fade" id="content-2" tabindex="-1" role="dialog" aria-labelledby="Lagen-Island" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <h5 class="modal-title" id="Lagen-Island">Lagen Island</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                              </button>
+                          </div>
+                          <div class="modal-body">
+                              <img src="../assets/img/Lagen-Island.jpg" class="img-fluid w-100 img-thumbnail" alt="Lagen Island">
+                          </div>
+                      </div>
+                  </div>
+              </div>
               <!-- Content3 -->
               <div class="col-lg-4 cold-md-4 col-sm-12 col-xs-12">
                 <div class="view zoom">
@@ -226,10 +256,25 @@
                 </div>
                 <h3 class="amber-shadow text-left">Sea Side Lounge</h3>
                 <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.<span><a href="../assets/img/bay-view.jpg" class="btn btn-sm btn-primary btn-rounded">View <i class="fa fa-eye" aria-hidden="true"></i></a></span></p>
+                tempor incididunt ut labore et dolore magna aliqua.<span><button class="btn btn-sm btn-primary btn-rounded" data-toggle="modal" data-target="#content-3">View <i class="fa fa-eye" aria-hidden="true"></i></button></span></p>
             </div>
           </div>
-           
+           <!-- Modal -->
+              <div class="modal fade" id="content-3" tabindex="-1" role="dialog" aria-labelledby="Sea Side Lounge" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <h5 class="modal-title" id="Sea Side Lounge">Sea Side Lounge</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                              </button>
+                          </div>
+                          <div class="modal-body">
+                              <img src="../assets/img/bay-view.jpg" class="img-fluid w-100 img-thumbnail" alt="Sea Side Lounge">
+                          </div>
+                      </div>
+                  </div>
+              </div> 
             <!-- Second Row -->
             <div class="row">
               <!-- Content1 -->
@@ -240,9 +285,24 @@
                 </div>
                 <h3 class="amber-shadow text-left">Miniloc Island</h3>
                 <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. <span><a href="../assets/img/Miniloc-Island.jpg" class="btn btn-sm btn-primary btn-rounded">View <i class="fa fa-eye" aria-hidden="true"></i></a></span></p>
+                tempor incididunt ut labore et dolore magna aliqua. <span><button class="btn btn-sm btn-primary btn-rounded" data-toggle="modal" data-target="#content-4">View <i class="fa fa-eye" aria-hidden="true"></i></button></span></p>
               </div>
-
+              <!-- Modal -->
+              <div class="modal fade" id="content-4" tabindex="-1" role="dialog" aria-labelledby="Miniloc Island" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <h5 class="modal-title" id="Miniloc Island">Miniloc Island</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                              </button>
+                          </div>
+                          <div class="modal-body">
+                              <img src="../assets/img/Miniloc-Island.jpg" class="img-fluid w-100 img-thumbnail" alt="Miniloc Island">
+                          </div>
+                      </div>
+                  </div>
+              </div> 
               <!-- Content2 -->
               <div class="col-lg-4 cold-md-4 col-sm-12 col-xs-12">
                 <div class="view zoom">
@@ -251,9 +311,24 @@
                 </div>
                 <h3 class="amber-shadow text-left">The Spa</h3>
                 <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. <span><a href="../assets/img/spa.jpg" class="btn btn-sm btn-primary btn-rounded">View <i class="fa fa-eye" aria-hidden="true"></i></a></span></p>
+                tempor incididunt ut labore et dolore magna aliqua. <span><button class="btn btn-sm btn-primary btn-rounded" data-toggle="modal" data-target="#content-5">View <i class="fa fa-eye" aria-hidden="true"></i></button></span></p>
               </div>
-
+              <!-- Modal -->
+              <div class="modal fade" id="content-5" tabindex="-1" role="dialog" aria-labelledby="The Spa" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <h5 class="modal-title" id="The Spa">The Spa</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                              </button>
+                          </div>
+                          <div class="modal-body">
+                              <img src="../assets/img/spa.jpg" class="img-fluid w-100 img-thumbnail" alt="The Spa">
+                          </div>
+                      </div>
+                  </div>
+              </div>
               <!-- Content3 -->
               <div class="col-lg-4 cold-md-4 col-sm-12 col-xs-12">
                 <div class="view zoom">
@@ -262,8 +337,24 @@
                 </div>
                 <h3 class="amber-shadow text-left">Mabuhay Reef</h3>
                 <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.<span><a href="../assets/img/scuba-3.jpg" class="btn btn-sm btn-primary btn-rounded">View <i class="fa fa-eye" aria-hidden="true"></i></a></span></p>
+                tempor incididunt ut labore et dolore magna aliqua.<span><button class="btn btn-sm btn-primary btn-rounded" data-toggle="modal" data-target="#content-6">View <i class="fa fa-eye" aria-hidden="true"></i></a></span></p>
             </div>
+             <!-- Modal -->
+              <div class="modal fade" id="content-6" tabindex="-1" role="dialog" aria-labelledby="Mabuhay Reef" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <h5 class="modal-title" id="Mabuhay Reef">Mabuhay Reef</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                              </button>
+                          </div>
+                          <div class="modal-body">
+                              <img src="../assets/img/scuba-3.jpg" class="img-fluid w-100 img-thumbnail" alt="Mabuhay Reef">
+                          </div>
+                      </div>
+                  </div>
+              </div>
         </div><!-- /Second Row -->
       </div><!-- /Content Wrapper -->
     </div><!-- /Gallery Column Wrapper -->
